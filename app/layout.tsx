@@ -22,13 +22,26 @@ const dmSans = DM_Sans({
   weight: ["400", "500"],
 });
 
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://axelbornav.com";
+const description =
+  "Axel Bornav Couture, chaussures de luxe sur le thème de la chemise sur mesure : tongs, escarpins et sandales. Livraison et droits de douane inclus en France et aux États-Unis.";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(BASE_URL),
   title: {
     default: `${siteConfig.brandName} — ${siteConfig.tagline}`,
     template: `%s — ${siteConfig.brandName}`,
   },
-  description:
-    "Axel Bornav Couture, chaussures de luxe sur le thème de la chemise sur mesure : tongs, escarpins et sandales. Livraison et droits de douane inclus en France et aux États-Unis.",
+  description,
+  openGraph: {
+    type: "website",
+    siteName: siteConfig.brandName,
+    title: `${siteConfig.brandName} — ${siteConfig.tagline}`,
+    description,
+    images: ["/images/gamme.jpg"],
+    locale: "fr_FR",
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
