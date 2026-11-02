@@ -1,0 +1,16 @@
+{
+  "slug": "sandale-noeud-cheville",
+  "name": "Sandale Nœud, bride cheville",
+  "family": "Talons",
+  "gender": "femme",
+  "priceFR": 120,
+  "priceUS": 125,
+  "shortDescription": "Talon aiguille, bride de cheville fine et petit nœud.",
+  "description": "Un talon aiguille, une bride de cheville fine et un petit nœud en cuir composent une sandale précise et aérienne, pensée pour les soirées où l'on veut se faire remarquer sans jamais forcer le trait.",
+  "images": ["/images/cheville.jpg"],
+  "colorways": ["Ivoire"],
+  "sizesEU": [35, 36, 37, 38, 39, 40, 41, 42],
+  "status": "precommande",
+  "materials": "Cuir pleine fleur, talon aiguille revêtu, semelle intérieure matelassée.",
+  "care": "Essuyer avec un chiffon doux et sec. Protéger de la pluie et de l'humidité."
+}

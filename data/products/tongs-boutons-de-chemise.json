@@ -1,0 +1,17 @@
+{
+  "slug": "tongs-boutons-de-chemise",
+  "name": "Tongs Boutons de chemise",
+  "family": "Tongs",
+  "gender": "femme",
+  "priceFR": 90,
+  "priceUS": 90,
+  "shortDescription": "Une rangée de boutons nacrés sur la lanière, comme un col de chemise.",
+  "description": "Une rangée de boutons nacrés souligne la lanière, clin d'œil direct au col d'une chemise sur mesure. Ce détail couture, cousu à la main, habille la tenue la plus simple d'une allure soignée.",
+  "images": ["/images/boutons.jpg", "/images/boutons2.jpg"],
+  "soleColors": ["Noir", "Bleu marine", "Chocolat", "Sable", "Cognac"],
+  "strapColors": ["Blanc cassé", "Lin", "Miel", "Gris", "Taupe", "Bleu marine"],
+  "sizesEU": [35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+  "status": "precommande",
+  "materials": "Cuir pleine fleur, boutons nacrés, semelle intérieure moelleuse.",
+  "care": "Essuyer avec un chiffon doux et sec. Éviter l'exposition prolongée au soleil et à l'humidité."
+}

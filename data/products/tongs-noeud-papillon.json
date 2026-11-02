@@ -1,0 +1,17 @@
+{
+  "slug": "tongs-noeud-papillon",
+  "name": "Tongs Nœud papillon",
+  "family": "Tongs",
+  "gender": "femme",
+  "priceFR": 90,
+  "priceUS": 85,
+  "shortDescription": "Un nœud papillon au creux de la lanière.",
+  "description": "Un nœud papillon en cuir souple se niche au creux de la lanière, apportant une touche d'élégance espiègle à une silhouette par ailleurs épurée. La semelle moelleuse assure un confort discret tout au long de la journée.",
+  "images": ["/images/noeud.jpg", "/images/noeud2.jpg"],
+  "soleColors": ["Noir", "Bleu marine", "Chocolat", "Sable", "Cognac"],
+  "strapColors": ["Blanc cassé", "Lin", "Miel", "Gris", "Taupe", "Bleu marine"],
+  "sizesEU": [35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+  "status": "precommande",
+  "materials": "Cuir pleine fleur, semelle intérieure moelleuse, semelle extérieure antidérapante.",
+  "care": "Essuyer avec un chiffon doux et sec. Éviter l'exposition prolongée au soleil et à l'humidité."
+}

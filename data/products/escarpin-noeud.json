@@ -1,0 +1,16 @@
+{
+  "slug": "escarpin-noeud",
+  "name": "Escarpin Nœud",
+  "family": "Talons",
+  "gender": "femme",
+  "priceFR": 125,
+  "priceUS": 130,
+  "shortDescription": "Un escarpin à talon fin, bicolore, avec un nœud sur le cou-de-pied.",
+  "description": "L'Escarpin Nœud associe un talon fin et un jeu bicolore à un nœud en cuir posé sur le cou-de-pied, en écho discret au nœud papillon. Une silhouette précise, pensée pour accompagner le soir comme le bureau.",
+  "images": ["/images/escarpin.jpg"],
+  "colorways": ["Noir", "Marine", "Chocolat", "Ivoire", "Cognac"],
+  "sizesEU": [35, 36, 37, 38, 39, 40, 41, 42],
+  "status": "precommande",
+  "materials": "Cuir pleine fleur bicolore, talon revêtu, semelle intérieure matelassée.",
+  "care": "Essuyer avec un chiffon doux et sec. Protéger de la pluie et de l'humidité."
+}

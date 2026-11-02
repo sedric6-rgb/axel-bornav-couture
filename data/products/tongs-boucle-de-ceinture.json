@@ -1,0 +1,16 @@
+{
+  "slug": "tongs-boucle-de-ceinture",
+  "name": "Tongs Boucle de ceinture",
+  "family": "Tongs",
+  "gender": "femme",
+  "priceFR": 95,
+  "priceUS": 100,
+  "shortDescription": "Une lanière à boucle dorée, sur semelle chocolat.",
+  "description": "Une boucle dorée, fermement cousue sur une lanière de cuir, rappelle le geste précis d'une ceinture sur mesure. Posée sur une semelle chocolat, elle apporte une touche d'allure à une silhouette estivale.",
+  "images": ["/images/boucle.jpg", "/images/boucle2.jpg"],
+  "colorways": ["Cognac", "Sable", "Taupe", "Noir", "Marine"],
+  "sizesEU": [35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+  "status": "precommande",
+  "materials": "Cuir pleine fleur, boucle plaquée or, semelle intérieure moelleuse.",
+  "care": "Essuyer avec un chiffon doux et sec. Éviter l'exposition prolongée au soleil et à l'humidité."
+}

@@ -1,0 +1,17 @@
+{
+  "slug": "tongs-cravate",
+  "name": "Tongs Cravate",
+  "family": "Tongs",
+  "gender": "femme",
+  "priceFR": 85,
+  "priceUS": 85,
+  "shortDescription": "Une lanière nouée comme une cravate, sur une semelle moelleuse à logo doré.",
+  "description": "La Tongs Cravate réinterprète le nœud de cravate en cuir fin, noué avec précision sur une semelle moelleuse frappée du logo doré de la Maison. Un geste couture discret, pensé pour accompagner chaque pas avec légèreté.",
+  "images": ["/images/cravate.jpg", "/images/cravate2.jpg"],
+  "soleColors": ["Noir", "Bleu marine", "Chocolat", "Sable", "Cognac"],
+  "strapColors": ["Blanc cassé", "Lin", "Miel", "Gris", "Taupe", "Bleu marine"],
+  "sizesEU": [35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+  "status": "precommande",
+  "materials": "Cuir pleine fleur, semelle intérieure moelleuse, semelle extérieure antidérapante.",
+  "care": "Essuyer avec un chiffon doux et sec. Éviter l'exposition prolongée au soleil et à l'humidité."
+}

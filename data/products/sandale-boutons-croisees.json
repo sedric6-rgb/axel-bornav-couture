@@ -1,0 +1,16 @@
+{
+  "slug": "sandale-boutons-croisees",
+  "name": "Sandale Boutons, brides croisées",
+  "family": "Talons",
+  "gender": "femme",
+  "priceFR": 140,
+  "priceUS": 140,
+  "shortDescription": "Brides croisées qui montent à la cheville, ornées de boutons de chemise.",
+  "description": "Des brides croisées montent le long de la cheville, rythmées de boutons nacrés qui rappellent le col d'une chemise. Une sandale structurée, au talon aiguille, pour une allure couture affirmée.",
+  "images": ["/images/croisees.jpg"],
+  "colorways": ["Noir", "Marine", "Chocolat", "Ivoire", "Cognac"],
+  "sizesEU": [35, 36, 37, 38, 39, 40, 41, 42],
+  "status": "precommande",
+  "materials": "Cuir pleine fleur, boutons nacrés, talon aiguille revêtu, semelle intérieure matelassée.",
+  "care": "Essuyer avec un chiffon doux et sec. Protéger de la pluie et de l'humidité."
+}

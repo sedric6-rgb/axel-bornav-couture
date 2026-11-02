@@ -1,0 +1,16 @@
+{
+  "slug": "sandale-noeud-fines-brides",
+  "name": "Sandale Nœud, fines brides",
+  "family": "Talons",
+  "gender": "femme",
+  "priceFR": 125,
+  "priceUS": 135,
+  "shortDescription": "Brides croisées légères autour de la cheville, nœud sur l'avant.",
+  "description": "Des brides fines se croisent légèrement autour de la cheville, jusqu'à un petit nœud posé sur l'avant du pied. Une sandale aérienne, taillée pour le talon aiguille et les soirées d'été.",
+  "images": ["/images/fines.jpg"],
+  "colorways": ["Noir", "Marine", "Chocolat", "Ivoire", "Cognac"],
+  "sizesEU": [35, 36, 37, 38, 39, 40, 41, 42],
+  "status": "precommande",
+  "materials": "Cuir pleine fleur, talon aiguille revêtu, semelle intérieure matelassée.",
+  "care": "Essuyer avec un chiffon doux et sec. Protéger de la pluie et de l'humidité."
+}

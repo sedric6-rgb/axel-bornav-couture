@@ -1,0 +1,16 @@
+{
+  "slug": "sandale-boutons-bride-t",
+  "name": "Sandale Boutons, bride en T",
+  "family": "Talons",
+  "gender": "femme",
+  "priceFR": 130,
+  "priceUS": 140,
+  "shortDescription": "Bride en T couverte de boutons, talon aiguille.",
+  "description": "Une bride en T entièrement couverte de boutons nacrés dessine une ligne verticale précise sur le cou-de-pied, portée par un talon aiguille. Une sandale graphique, héritée du vestiaire masculin sur mesure.",
+  "images": ["/images/tbride.jpg"],
+  "colorways": ["Noir", "Marine", "Chocolat", "Ivoire", "Cognac"],
+  "sizesEU": [35, 36, 37, 38, 39, 40, 41, 42],
+  "status": "precommande",
+  "materials": "Cuir pleine fleur, boutons nacrés, talon aiguille revêtu, semelle intérieure matelassée.",
+  "care": "Essuyer avec un chiffon doux et sec. Protéger de la pluie et de l'humidité."
+}

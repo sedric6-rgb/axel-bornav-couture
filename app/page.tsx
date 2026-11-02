@@ -1,69 +1,135 @@
 import Image from "next/image";
+import Link from "next/link";
+import { FadeIn } from "@/components/FadeIn";
+import { siteConfig } from "@/lib/config";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <div>
+      {/* Hero */}
+      <section className="relative h-[85vh] min-h-[560px] w-full overflow-hidden">
         <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
+          src="/images/gamme.jpg"
+          alt="Collection Axel Bornav Couture"
+          fill
           priority
+          className="object-cover"
+          sizes="100vw"
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+        <div className="absolute inset-0 bg-ink/25" />
+        <div className="relative h-full flex flex-col items-center justify-end text-center px-6 pb-20 text-cream">
+          <FadeIn>
+            <p className="text-xs tracking-label mb-4 opacity-90">
+              Précommande — Premier lot numéroté
+            </p>
+            <h1 className="font-serif text-4xl md:text-6xl mb-6">
+              {siteConfig.tagline}
+            </h1>
+            <Link
+              href="/femme"
+              className="inline-block border border-cream px-8 py-3 text-xs tracking-label hover:bg-cream hover:text-ink transition-colors"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+              Découvrir la collection
+            </Link>
+          </FadeIn>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      </section>
+
+      {/* Collections */}
+      <section className="mx-auto max-w-[1400px] px-4 md:px-8 py-24 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <FadeIn>
+          <Link href="/femme/tongs" className="group block relative h-[480px] overflow-hidden">
             <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
+              src="/images/cravate.jpg"
+              alt="Collection Tongs Axel Bornav Couture"
+              fill
+              className="object-cover transition-transform duration-700 group-hover:scale-105"
+              sizes="(min-width: 768px) 50vw, 100vw"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            <div className="absolute inset-0 bg-ink/10 group-hover:bg-ink/20 transition-colors" />
+            <div className="absolute bottom-8 left-8 text-cream">
+              <h2 className="font-serif text-3xl mb-2">Tongs</h2>
+              <span className="text-xs tracking-label border-b border-cream pb-1">
+                Voir la collection
+              </span>
+            </div>
+          </Link>
+        </FadeIn>
+        <FadeIn delay={100}>
+          <Link href="/femme/talons" className="group block relative h-[480px] overflow-hidden">
+            <Image
+              src="/images/croisees.jpg"
+              alt="Collection Talons Axel Bornav Couture"
+              fill
+              className="object-cover transition-transform duration-700 group-hover:scale-105"
+              sizes="(min-width: 768px) 50vw, 100vw"
+            />
+            <div className="absolute inset-0 bg-ink/10 group-hover:bg-ink/20 transition-colors" />
+            <div className="absolute bottom-8 left-8 text-cream">
+              <h2 className="font-serif text-3xl mb-2">Talons</h2>
+              <span className="text-xs tracking-label border-b border-cream pb-1">
+                Voir la collection
+              </span>
+            </div>
+          </Link>
+        </FadeIn>
+      </section>
+
+      {/* La Maison */}
+      <section className="mx-auto max-w-[1400px] px-4 md:px-8 pb-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <FadeIn className="relative h-[420px] order-2 md:order-1">
+          <Image
+            src="/images/boucle2.jpg"
+            alt="Savoir-faire Axel Bornav Couture"
+            fill
+            className="object-cover"
+            sizes="(min-width: 768px) 50vw, 100vw"
+          />
+        </FadeIn>
+        <FadeIn className="order-1 md:order-2" delay={100}>
+          <p className="text-xs tracking-label text-muted mb-4">La Maison</p>
+          <h2 className="font-serif text-3xl md:text-4xl mb-6">
+            L&apos;élégance de la chemise sur mesure, au bout des pas
+          </h2>
+          <p className="text-sm text-muted leading-relaxed mb-8 max-w-md">
+            Cravate nouée, nœud papillon, boutons nacrés, boucle dorée : chaque
+            modèle emprunte à la garde-robe de la chemise sur mesure un détail
+            précis, retranscrit en cuir par des mains expertes.
+          </p>
+          <Link
+            href="/la-maison"
+            className="text-xs tracking-label border-b border-ink pb-1 hover:text-accent hover:border-accent transition-colors"
           >
-            Documentation
-          </a>
+            Découvrir la Maison
+          </Link>
+        </FadeIn>
+      </section>
+
+      {/* Coffret */}
+      <section className="relative h-[70vh] min-h-[480px] w-full overflow-hidden">
+        <Image
+          src="/images/coffret.jpg"
+          alt="Coffret Axel Bornav Couture"
+          fill
+          className="object-cover"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-ink/35" />
+        <div className="relative h-full flex flex-col items-center justify-center text-center px-6 text-cream">
+          <FadeIn>
+            <p className="text-xs tracking-label mb-4 opacity-90">Coffret et cadeaux</p>
+            <h2 className="font-serif text-3xl md:text-5xl mb-6 max-w-2xl">
+              Chaque paire est livrée dans son coffret signature
+            </h2>
+            <Link
+              href="/coffret"
+              className="inline-block border border-cream px-8 py-3 text-xs tracking-label hover:bg-cream hover:text-ink transition-colors"
+            >
+              Découvrir le coffret
+            </Link>
+          </FadeIn>
         </div>
-      </main>
+      </section>
     </div>
   );
 }
