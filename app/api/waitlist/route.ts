@@ -2,16 +2,23 @@ import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import type { WaitlistEntry } from "@/lib/types";
+import { addContactToBrevo } from "@/lib/brevo";
 
-// Stockage temporaire en fichier local, en attendant le choix définitif
-// (Supabase ou service d'e-mailing type Brevo) décrit dans le brief, section 7.
+// Repli local : utilisé uniquement si Brevo n'est pas encore configuré
+// (BREVO_API_KEY / BREVO_LIST_ID absents), pour ne jamais perdre une
+// inscription pendant le développement.
 const FILE = path.join(process.cwd(), "data", "waitlist.local.json");
 
-function readAll(): WaitlistEntry[] {
+function appendLocal(entry: WaitlistEntry) {
+  let all: WaitlistEntry[] = [];
   try {
-    return JSON.parse(fs.readFileSync(FILE, "utf-8"));
+    all = JSON.parse(fs.readFileSync(FILE, "utf-8"));
   } catch {
-    return [];
+    all = [];
+  }
+  if (!all.some((e) => e.email === entry.email)) {
+    all.push(entry);
+    fs.writeFileSync(FILE, JSON.stringify(all, null, 2));
   }
 }
 
@@ -31,16 +38,23 @@ export async function POST(req: NextRequest) {
       : "general",
   };
 
-  const all = readAll();
-  if (all.some((e) => e.email === entry.email)) {
-    return NextResponse.json({ ok: true, alreadyRegistered: true });
-  }
-  all.push(entry);
-
   try {
-    fs.writeFileSync(FILE, JSON.stringify(all, null, 2));
-  } catch {
-    return NextResponse.json({ error: "Erreur d'enregistrement." }, { status: 500 });
+    await addContactToBrevo({
+      email: entry.email,
+      firstName: entry.firstName,
+      country: entry.country,
+      interest: entry.interest,
+    });
+  } catch (err) {
+    // Brevo pas encore configuré (ou indisponible) : on garde quand même
+    // l'inscription localement pour ne rien perdre, et on prévient dans les
+    // journaux du serveur pour que ce soit visible en test.
+    console.warn("[waitlist] Brevo indisponible, repli local :", (err as Error).message);
+    try {
+      appendLocal(entry);
+    } catch {
+      return NextResponse.json({ error: "Erreur d'enregistrement." }, { status: 500 });
+    }
   }
 
   return NextResponse.json({ ok: true });
