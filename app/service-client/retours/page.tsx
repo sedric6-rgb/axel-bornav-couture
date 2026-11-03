@@ -10,9 +10,8 @@ export default function RetoursPage() {
     <TextPage eyebrow="Service client" title="Retours et échanges">
       <p>
         Vous disposez de {siteConfig.returnDays} jours à compter de la
-        réception de votre commande pour demander un retour ou un échange,
-        conformément à votre{" "}
-        <Link href="/retractation">droit de rétractation</Link>.
+        réception de votre commande pour demander un échange (autre
+        pointure, autre coloris).
       </p>
 
       <h2>Conditions</h2>
@@ -29,10 +28,12 @@ export default function RetoursPage() {
         étiquette de retour prépayée.
       </p>
 
-      <h2>Remboursement</h2>
+      <h2>Échange, pas de remboursement</h2>
       <p>
-        Le remboursement est effectué sur le moyen de paiement utilisé, dès
-        réception et contrôle de l&apos;article retourné.
+        Notre politique est l&apos;échange (pointure ou coloris) : nous ne
+        proposons pas de remboursement, hors exercice de votre{" "}
+        <Link href="/retractation">droit de rétractation</Link> légal de 14
+        jours, auquel vous pouvez recourir conformément à la loi.
       </p>
     </TextPage>
   );

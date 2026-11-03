@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: "Puis-je retourner un modèle ?",
-    a: `Oui, sous ${siteConfig.returnDays} jours après réception. Voir notre page Retours et échanges.`,
+    a: `Nous proposons l'échange (pointure ou coloris) sous ${siteConfig.returnDays} jours après réception, mais pas de remboursement — hors exercice de votre droit de rétractation légal de 14 jours. Voir notre page Retours et échanges.`,
   },
 ];
 
