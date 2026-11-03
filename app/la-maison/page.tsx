@@ -61,8 +61,7 @@ export default function LaMaisonPage() {
           <p className="text-sm text-muted leading-relaxed">
             Nos tongs et sandales sont travaillées en cuir pleine fleur, sur
             une semelle intérieure moelleuse, avec des quincailleries dorées
-            ou des boutons nacrés selon les modèles. Le pays de fabrication
-            sera précisé ici dès la confirmation de nos ateliers partenaires.
+            ou des boutons nacrés selon les modèles.
           </p>
         </FadeIn>
       </section>
