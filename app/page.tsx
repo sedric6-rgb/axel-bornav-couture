@@ -49,17 +49,17 @@ export default function HomePage() {
       {/* Collections */}
       <section className="mx-auto max-w-[1400px] px-4 md:px-8 py-24 grid grid-cols-1 md:grid-cols-2 gap-6">
         <FadeIn>
-          <Link href="/femme/tongs" className="group block relative h-[480px] overflow-hidden">
+          <Link href="/femme" className="group block relative h-[480px] overflow-hidden">
             <Image
               src="/images/cravate.jpg"
-              alt="Collection Tongs Axel Bornav Couture"
+              alt="Collection Femme Axel Bornav Couture"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"
               sizes="(min-width: 768px) 50vw, 100vw"
             />
             <div className="absolute inset-0 bg-ink/10 group-hover:bg-ink/20 transition-colors" />
             <div className="absolute bottom-8 left-8 text-cream">
-              <h2 className="font-serif text-3xl mb-2">Tongs</h2>
+              <h2 className="font-serif text-3xl mb-2">Femme</h2>
               <span className="text-xs tracking-label border-b border-cream pb-1">
                 Voir la collection
               </span>
@@ -67,17 +67,17 @@ export default function HomePage() {
           </Link>
         </FadeIn>
         <FadeIn delay={100}>
-          <Link href="/femme/talons" className="group block relative h-[480px] overflow-hidden">
+          <Link href="/homme" className="group block relative h-[480px] overflow-hidden">
             <Image
-              src="/images/croisees.jpg"
-              alt="Collection Talons Axel Bornav Couture"
+              src="/images/homme-richelieu-bicolore.jpg"
+              alt="Collection Homme Axel Bornav Couture"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"
               sizes="(min-width: 768px) 50vw, 100vw"
             />
             <div className="absolute inset-0 bg-ink/10 group-hover:bg-ink/20 transition-colors" />
             <div className="absolute bottom-8 left-8 text-cream">
-              <h2 className="font-serif text-3xl mb-2">Talons</h2>
+              <h2 className="font-serif text-3xl mb-2">Homme</h2>
               <span className="text-xs tracking-label border-b border-cream pb-1">
                 Voir la collection
               </span>

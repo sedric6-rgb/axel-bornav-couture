@@ -1,0 +1,16 @@
+{
+  "slug": "homme-richelieu-uni",
+  "name": "Richelieu Uni",
+  "family": "Chaussures homme",
+  "gender": "homme",
+  "priceFR": 185,
+  "priceUS": 190,
+  "shortDescription": "Un richelieu au bout fleuri, en cuir pleine fleur, disponible en cinq coloris.",
+  "description": "Le Richelieu Uni reprend les codes du soulier classique à bout fleuri perforé, dans une teinte unie. Un modèle intemporel, taillé pour le bureau comme pour les grandes occasions.",
+  "images": ["/images/homme-gamme-richelieu.jpg"],
+  "colorways": ["Noir", "Marine", "Marron", "Beige", "Cognac"],
+  "sizesEU": [40, 41, 42, 43, 44, 45, 46],
+  "status": "precommande",
+  "materials": "Cuir pleine fleur, semelle en cuir cousue.",
+  "care": "Essuyer avec un chiffon doux et sec. Protéger de la pluie et de l'humidité."
+}

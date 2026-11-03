@@ -1,0 +1,16 @@
+{
+  "slug": "homme-mocassin-classique",
+  "name": "Mocassin Classique",
+  "family": "Chaussures homme",
+  "gender": "homme",
+  "priceFR": 170,
+  "priceUS": 175,
+  "shortDescription": "Un mocassin épuré en cuir pleine fleur, disponible en cinq coloris.",
+  "description": "Le Mocassin Classique mise sur l'épure : une ligne nette, une empeigne en cuir pleine fleur et une construction souple, pensée pour accompagner le quotidien avec élégance.",
+  "images": ["/images/homme-gamme-mocassin.jpg"],
+  "colorways": ["Noir", "Marine", "Marron", "Beige", "Cognac"],
+  "sizesEU": [40, 41, 42, 43, 44, 45, 46],
+  "status": "precommande",
+  "materials": "Cuir pleine fleur, semelle intérieure en cuir.",
+  "care": "Essuyer avec un chiffon doux et sec. Éviter l'exposition prolongée au soleil et à l'humidité."
+}

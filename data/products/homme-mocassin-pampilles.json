@@ -1,0 +1,16 @@
+{
+  "slug": "homme-mocassin-pampilles",
+  "name": "Mocassin Pampilles",
+  "family": "Chaussures homme",
+  "gender": "homme",
+  "priceFR": 190,
+  "priceUS": 195,
+  "shortDescription": "Un mocassin à pampilles en cuir pleine fleur, pour une allure habillée et décontractée.",
+  "description": "Le Mocassin Pampilles reprend les codes du soulier à pampilles, en cuir pleine fleur cousu main. Une pièce polyvalente, aussi à l'aise avec un costume qu'avec une tenue plus décontractée.",
+  "images": ["/images/homme-mocassin-pampilles.jpg"],
+  "colorways": ["Bordeaux"],
+  "sizesEU": [40, 41, 42, 43, 44, 45, 46],
+  "status": "precommande",
+  "materials": "Cuir pleine fleur, pampilles cousues main, semelle intérieure en cuir.",
+  "care": "Essuyer avec un chiffon doux et sec. Éviter l'exposition prolongée au soleil et à l'humidité."
+}

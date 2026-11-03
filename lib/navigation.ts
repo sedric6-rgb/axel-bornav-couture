@@ -44,11 +44,17 @@ export const mainNav: NavItem[] = [
   {
     label: "Homme",
     href: "/homme",
-    image: { src: "/images/cravate2.jpg", alt: "Collection Homme Axel Bornav Couture" },
+    image: { src: "/images/homme-richelieu-bicolore.jpg", alt: "Collection Homme Axel Bornav Couture" },
     columns: [
       {
         heading: "Chaussures homme",
-        links: [{ label: "Découvrir", href: "/homme/chaussures-homme" }],
+        links: [
+          { label: "Mocassin Pampilles", href: "/produit/homme-mocassin-pampilles" },
+          { label: "Mocassin Classique", href: "/produit/homme-mocassin-classique" },
+          { label: "Richelieu Bicolore", href: "/produit/homme-richelieu-bicolore" },
+          { label: "Richelieu Uni", href: "/produit/homme-richelieu-uni" },
+          { label: "Toutes les chaussures", href: "/homme/chaussures-homme" },
+        ],
       },
       {
         heading: "Sneakers",

@@ -1,0 +1,16 @@
+{
+  "slug": "homme-sneaker",
+  "name": "Sneaker Axel Bornav",
+  "family": "Sneakers",
+  "gender": "homme",
+  "priceFR": 175,
+  "priceUS": 180,
+  "shortDescription": "Une sneaker en cuir et suède, mariant marine, beige, noir et cognac.",
+  "description": "La première sneaker de la Maison associe cuir lisse et suède dans un jeu de matières et de couleurs — marine, beige, noir et cognac — sur une semelle légère. Un vestiaire plus décontracté, dans le même esprit couture.",
+  "images": ["/images/homme-sneaker.jpg"],
+  "colorways": ["Marine / Beige / Noir / Cognac"],
+  "sizesEU": [40, 41, 42, 43, 44, 45, 46],
+  "status": "precommande",
+  "materials": "Cuir pleine fleur et suède, semelle légère.",
+  "care": "Essuyer avec un chiffon doux et sec. Éviter l'exposition prolongée au soleil et à l'humidité."
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "homme-richelieu-bicolore",
+  "name": "Richelieu Bicolore",
+  "family": "Chaussures homme",
+  "gender": "homme",
+  "priceFR": 210,
+  "priceUS": 220,
+  "shortDescription": "Un richelieu bicolore cognac et marron, au bout fleuri perforé.",
+  "description": "Le Richelieu Bicolore associe deux teintes de cuir, cognac et marron, pour une silhouette affirmée. Le bout fleuri perforé et le laçage classique en font une pièce de caractère pour les journées habillées.",
+  "images": ["/images/homme-richelieu-bicolore.jpg"],
+  "colorways": ["Cognac / Marron"],
+  "sizesEU": [40, 41, 42, 43, 44, 45, 46],
+  "status": "precommande",
+  "materials": "Cuir pleine fleur bicolore, semelle en cuir cousue.",
+  "care": "Essuyer avec un chiffon doux et sec. Protéger de la pluie et de l'humidité."
+}
