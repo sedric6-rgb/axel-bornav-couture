@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export function Logo({
   className = "",
@@ -7,21 +8,24 @@ export function Logo({
   className?: string;
   tone?: "dark" | "light";
 }) {
-  const primary = tone === "dark" ? "text-ink" : "text-cream";
-  const secondary = tone === "dark" ? "text-muted" : "text-cream/70";
+  // tone "dark" = dark logo marks, for light (cream) backgrounds.
+  // tone "light" = white logo marks, for dark (ink) backgrounds.
+  const src = tone === "dark" ? "/brand/logo-light.png" : "/brand/logo-dark.png";
 
   return (
     <Link
       href="/"
       aria-label="Axel Bornav Couture — Accueil"
-      className={`flex flex-col items-center leading-none ${className}`}
+      className={`inline-flex items-center ${className}`}
     >
-      <span className={`font-serif text-xl md:text-2xl tracking-[0.18em] ${primary}`}>
-        AXEL BORNAV
-      </span>
-      <span className={`text-[0.55rem] md:text-[0.6rem] tracking-[0.4em] mt-1 ${secondary}`}>
-        COUTURE
-      </span>
+      <Image
+        src={src}
+        alt="Axel Bornav Couture"
+        width={1916}
+        height={948}
+        priority
+        className="h-11 md:h-14 w-auto"
+      />
     </Link>
   );
 }
