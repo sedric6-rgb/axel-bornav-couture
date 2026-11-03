@@ -4,7 +4,7 @@ export const siteConfig = {
   brandName: "Axel Bornav Couture",
   tagline: "L'élégance jusqu'au bout de vos pas",
   // Interrupteur précommande : true = boutons "Précommander", false = vente normale.
-  preorderEnabled: true,
+  preorderEnabled: false,
   preorderMessage: "Livraison estimée dans 5 à 6 semaines.",
   shippingMessage: "Livraison et droits de douane inclus.",
   announcementBar:
