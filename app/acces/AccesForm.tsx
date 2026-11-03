@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { siteConfig } from "@/lib/config";
 
 export function AccesForm() {
@@ -17,8 +18,14 @@ export function AccesForm() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-cream px-6">
       <div className="w-full max-w-sm text-center">
-        <p className="font-serif text-2xl tracking-[0.18em] mb-1">AXEL BORNAV</p>
-        <p className="text-[0.6rem] tracking-[0.4em] text-muted mb-10">COUTURE</p>
+        <Image
+          src="/brand/logo-light.png"
+          alt="Axel Bornav Couture"
+          width={1916}
+          height={948}
+          priority
+          className="h-12 w-auto mx-auto mb-10"
+        />
         <p className="text-sm text-muted mb-8">
           Site en cours de préparation. Entrez le mot de passe d&apos;accès
           pour continuer.
