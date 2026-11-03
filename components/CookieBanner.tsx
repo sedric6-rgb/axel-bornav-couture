@@ -30,27 +30,28 @@ export function CookieBanner() {
 
   return (
     <div className="fixed bottom-0 inset-x-0 z-[60] bg-ink text-cream">
-      <div className="mx-auto max-w-[1400px] px-6 py-5 flex flex-col md:flex-row items-center gap-4 md:gap-8">
-        <p className="text-xs md:text-sm text-cream/85 flex-1">
-          Nous utilisons des cookies essentiels au fonctionnement du site. Avec
-          votre accord, nous utilisons aussi des cookies de mesure d&apos;audience.
-          Vous pouvez les refuser sans que cela affecte votre navigation.{" "}
-          <Link href="/cookies" className="underline hover:text-gold">
+      <div className="mx-auto max-w-[1400px] px-3 py-2 md:px-6 md:py-5 flex flex-row flex-wrap md:flex-nowrap items-center gap-2 md:gap-8">
+        <p className="text-[0.65rem] leading-tight md:text-sm text-cream/85 flex-1 min-w-[140px]">
+          <span className="md:hidden">Cookies —</span>
+          <span className="hidden md:inline">
+            Cookies essentiels au site et, avec votre accord, de mesure d&apos;audience.
+          </span>{" "}
+          <Link href="/cookies" className="underline hover:text-gold whitespace-nowrap">
             En savoir plus
           </Link>
         </p>
-        <div className="flex gap-3 shrink-0">
+        <div className="flex gap-2 md:gap-3 shrink-0">
           <button
             type="button"
             onClick={() => choose("refused")}
-            className="text-xs tracking-label border border-cream/40 px-4 py-2 hover:border-cream transition-colors"
+            className="text-[0.65rem] md:text-xs tracking-label border border-cream/40 px-3 py-1 md:px-4 md:py-2 hover:border-cream transition-colors"
           >
             Refuser
           </button>
           <button
             type="button"
             onClick={() => choose("accepted")}
-            className="text-xs tracking-label bg-gold text-ink px-4 py-2 hover:bg-cream transition-colors"
+            className="text-[0.65rem] md:text-xs tracking-label bg-gold text-ink px-3 py-1 md:px-4 md:py-2 hover:bg-cream transition-colors"
           >
             Accepter
           </button>

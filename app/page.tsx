@@ -7,7 +7,7 @@ export default function HomePage() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative h-[85vh] min-h-[560px] w-full overflow-hidden">
+      <section className="relative h-[70vh] min-h-[460px] md:h-[85vh] md:min-h-[560px] w-full overflow-hidden">
         <video
           className="absolute inset-0 w-full h-full object-cover hidden motion-safe:block"
           autoPlay
@@ -28,17 +28,17 @@ export default function HomePage() {
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-ink/25" />
-        <div className="relative h-full flex flex-col items-center justify-end text-center px-6 pb-20 text-cream">
+        <div className="relative h-full flex flex-col items-center justify-end text-center px-6 pb-10 md:pb-20 text-cream">
           <FadeIn>
-            <p className="text-xs tracking-label mb-4 opacity-90">
+            <p className="text-xs tracking-label mb-2 md:mb-4 opacity-90">
               Précommande — Premier lot numéroté
             </p>
-            <h1 className="font-serif text-4xl md:text-6xl mb-6">
+            <h1 className="font-serif text-3xl md:text-6xl mb-4 md:mb-6 leading-tight">
               {siteConfig.tagline}
             </h1>
             <Link
               href="/femme"
-              className="inline-block border border-cream px-8 py-3 text-xs tracking-label hover:bg-cream hover:text-ink transition-colors"
+              className="inline-block border border-cream px-8 py-2.5 md:py-3 text-xs tracking-label hover:bg-cream hover:text-ink transition-colors"
             >
               Découvrir la collection
             </Link>
