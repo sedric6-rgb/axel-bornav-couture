@@ -22,7 +22,7 @@ const dmSans = DM_Sans({
   weight: ["400", "500"],
 });
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://axelbornav.com";
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://axel-bornav-couture.vercel.app";
 const description =
   "Axel Bornav Couture, chaussures de luxe sur le thème de la chemise sur mesure : tongs, escarpins et sandales. Livraison et droits de douane inclus en France et aux États-Unis.";
 

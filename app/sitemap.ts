@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllProducts } from "@/lib/products";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://axelbornav.com";
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://axel-bornav-couture.vercel.app";
 
 const staticPaths = [
   "",
