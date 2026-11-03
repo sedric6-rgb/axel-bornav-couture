@@ -62,7 +62,6 @@ export const mainNav: NavItem[] = [
       },
     ],
   },
-  { label: "Coffret et cadeaux", href: "/coffret" },
   { label: "La Maison", href: "/la-maison" },
   { label: "Service client", href: "/service-client" },
 ];
