@@ -10,6 +10,8 @@ interface BrevoContactInput {
   firstName?: string;
   country?: string;
   interest?: string;
+  lastName?: string;
+  orderSummary?: string;
 }
 
 export async function addContactToBrevo(input: BrevoContactInput): Promise<void> {
@@ -33,8 +35,10 @@ export async function addContactToBrevo(input: BrevoContactInput): Promise<void>
       email: input.email,
       attributes: {
         FIRSTNAME: input.firstName || undefined,
+        LASTNAME: input.lastName || undefined,
         COUNTRY: input.country,
         INTEREST: input.interest,
+        ORDER_SUMMARY: input.orderSummary || undefined,
       },
       listIds: [Number(listId)],
       updateEnabled: true,

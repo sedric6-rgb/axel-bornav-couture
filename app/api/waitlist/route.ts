@@ -1,13 +1,16 @@
 import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
+import os from "os";
 import path from "path";
 import type { WaitlistEntry } from "@/lib/types";
 import { addContactToBrevo } from "@/lib/brevo";
 
 // Repli local : utilisé uniquement si Brevo n'est pas encore configuré
 // (BREVO_API_KEY / BREVO_LIST_ID absents), pour ne jamais perdre une
-// inscription pendant le développement.
-const FILE = path.join(process.cwd(), "data", "waitlist.local.json");
+// inscription pendant le développement. On écrit dans le dossier temporaire
+// du système : c'est le seul endroit accessible en écriture une fois le
+// site déployé sur Vercel (le reste du projet est en lecture seule).
+const FILE = path.join(os.tmpdir(), "abc-waitlist.local.json");
 
 function appendLocal(entry: WaitlistEntry) {
   let all: WaitlistEntry[] = [];
