@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FadeIn } from "@/components/FadeIn";
+import { HeroMedia } from "@/components/HeroMedia";
 import { siteConfig } from "@/lib/config";
 
 export default function HomePage() {
@@ -8,25 +9,7 @@ export default function HomePage() {
     <div>
       {/* Hero */}
       <section className="relative h-[70vh] min-h-[460px] md:h-[85vh] md:min-h-[560px] w-full overflow-hidden">
-        <video
-          className="absolute inset-0 w-full h-full object-cover hidden motion-safe:block"
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster="/video/coffret-hero-poster.jpg"
-        >
-          <source src="/video/coffret-hero.webm" type="video/webm" />
-          <source src="/video/coffret-hero.mp4" type="video/mp4" />
-        </video>
-        <Image
-          src="/video/coffret-hero-poster.jpg"
-          alt="Coffret Axel Bornav Couture"
-          fill
-          priority
-          className="object-cover motion-safe:hidden"
-          sizes="100vw"
-        />
+        <HeroMedia />
         <div className="absolute inset-0 bg-ink/25" />
         <div className="relative h-full flex flex-col items-center justify-end text-center px-6 pb-10 md:pb-20 text-cream">
           <FadeIn>
