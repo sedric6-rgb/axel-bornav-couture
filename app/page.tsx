@@ -10,7 +10,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative h-[70vh] min-h-[460px] md:h-[85vh] md:min-h-[560px] w-full overflow-hidden">
         <HeroMedia />
-        <div className="absolute inset-0 bg-ink/25" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/15 to-transparent" />
         <div className="relative h-full flex flex-col items-center justify-end text-center px-6 pb-10 md:pb-20 text-cream">
           <FadeIn>
             <p className="text-xs tracking-label mb-2 md:mb-4 opacity-90">
